@@ -22,17 +22,6 @@ export default function Footer({ onOpenAdmin }) {
               Plataforma tecnológica comunitaria diseñada para conectar productores, artesanos y vecinos mediante trueques transparentes y catálogos geolocalizados en una app nativa en Flutter.
             </p>
 
-            <div className="flex items-center gap-3 pt-2 text-slate-300">
-              <a href="https://github.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="GitHub">
-                <i className="fa-brands fa-github text-sm"></i>
-              </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="WhatsApp">
-                <i className="fa-brands fa-whatsapp text-sm"></i>
-              </a>
-              <a href="#" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="Telegram">
-                <i className="fa-brands fa-telegram text-sm"></i>
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
