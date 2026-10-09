@@ -33,8 +33,7 @@ export default function Navbar({ onOpenAdmin }) {
             <a href="#inicio" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Inicio</a>
             <a href="#solucion" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">La Solución</a>
             <a href="#simulador" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">App Interactiva</a>
-            <a href="#descargas" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Descargas Nativas</a>
-            <a href="#contacto-demo" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Pedir Demo</a>
+            <a href="#descargas" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Descargar APK</a>
           </nav>
 
           {/* Right Action Buttons */}
@@ -49,17 +48,17 @@ export default function Navbar({ onOpenAdmin }) {
             </button>
 
             <a 
-              href="#contacto-demo" 
+              href="#descargas" 
               className="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-700 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-brand-600/25 hover:shadow-xl hover:shadow-brand-600/35 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <i className="fa-regular fa-calendar-check"></i>
-              <span>Solicitar Demo</span>
+              <i className="fa-brands fa-android text-base"></i>
+              <span>Descargar APK</span>
             </a>
 
             {/* Mobile Toggle Menu Button */}
             <button 
               onClick={toggleMobileMenu} 
-              className="lg:hidden p-2 sm:p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition-colors" 
+              className="lg:hidden p-2 sm:p-2.5 rounded-xl text-slate-700 hover:bg-slate-100 focus:outline-none transition-colors cursor-pointer" 
               aria-label="Menú"
             >
               <i className={`fa-solid ${mobileMenuOpen ? 'fa-xmark' : 'fa-bars'} text-xl`}></i>
@@ -75,19 +74,19 @@ export default function Navbar({ onOpenAdmin }) {
           <a href="#inicio" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Inicio</a>
           <a href="#solucion" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">La Solución</a>
           <a href="#simulador" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">App Interactiva</a>
-          <a href="#descargas" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Descargas Nativas (APK, EXE, DMG)</a>
-          <a href="#contacto-demo" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Solicitar Demostración</a>
+          <a href="#descargas" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Descargar APK Android</a>
           <div className="pt-2 space-y-2.5">
             <a 
-              href="#contacto-demo" 
+              href="#descargas" 
               onClick={closeMobileMenu} 
               className="w-full text-center block py-3 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 text-white font-bold text-sm shadow-lg shadow-brand-600/20"
             >
-              Pedir Demostración Guiada
+              <i className="fa-brands fa-android mr-2"></i>
+              Descargar Feriando APK
             </a>
             <button 
               onClick={() => { closeMobileMenu(); onOpenAdmin(); }} 
-              className="w-full py-2.5 text-center flex items-center justify-center gap-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs transition-colors"
+              className="w-full py-2.5 text-center flex items-center justify-center gap-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs transition-colors cursor-pointer"
             >
               <i className="fa-solid fa-lock text-brand-600"></i>
               <span>Acceso Panel Administrativo</span>

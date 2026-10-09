@@ -29,15 +29,15 @@ export default function Hero({ onShowToast }) {
                 href="#descargas" 
                 className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-gradient-to-r from-brand-600 via-emerald-600 to-teal-600 hover:from-brand-700 hover:to-emerald-700 text-white font-extrabold text-sm sm:text-base shadow-xl shadow-brand-600/30 hover:shadow-2xl hover:scale-[1.02] active:scale-[0.99] transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 group"
               >
-                <i className="fa-solid fa-cloud-arrow-down text-base sm:text-lg group-hover:-translate-y-0.5 transition-transform"></i>
-                <span>Descargar Aplicación</span>
+                <i className="fa-brands fa-android text-lg group-hover:-translate-y-0.5 transition-transform"></i>
+                <span>Descargar APK Oficial</span>
               </a>
               <a 
-                href="#contacto-demo" 
+                href="#simulador" 
                 className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-extrabold text-sm sm:text-base border-2 border-slate-200 hover:border-brand-500 hover:text-brand-700 transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 shadow-sm hover:shadow-md"
               >
-                <i className="fa-regular fa-paper-plane text-brand-600"></i>
-                <span>Solicitar Demostración</span>
+                <i className="fa-solid fa-mobile-screen text-brand-600"></i>
+                <span>Probar Simulador</span>
               </a>
             </div>
 
