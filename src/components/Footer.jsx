@@ -1,0 +1,112 @@
+import React from 'react';
+
+export default function Footer({ onOpenAdmin }) {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-slate-950 text-slate-400 text-xs border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10">
+          
+          {/* Brand Info */}
+          <div className="lg:col-span-2 space-y-4">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-700 via-brand-600 to-emerald-400 flex items-center justify-center text-white shadow-md shadow-brand-600/30">
+                <i className="fa-solid fa-store text-lg"></i>
+              </div>
+              <span className="text-xl font-black text-white tracking-tight">Feriando</span>
+            </div>
+
+            <p className="text-slate-400 leading-relaxed max-w-sm">
+              Plataforma tecnológica comunitaria diseñada para conectar productores, artesanos y vecinos mediante trueques transparentes y catálogos geolocalizados.
+            </p>
+
+            <div className="flex items-center gap-3 pt-2 text-slate-300">
+              <a href="https://github.com" target="_blank" rel="noreferrer" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="GitHub">
+                <i className="fa-brands fa-github text-sm"></i>
+              </a>
+              <a href="#" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="WhatsApp">
+                <i className="fa-brands fa-whatsapp text-sm"></i>
+              </a>
+              <a href="#" className="w-8 h-8 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 flex items-center justify-center hover:text-white transition-colors" aria-label="Telegram">
+                <i className="fa-brands fa-telegram text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-black uppercase tracking-wider text-white">Navegación</h4>
+            <ul className="space-y-2">
+              <li><a href="#inicio" className="hover:text-white transition-colors">Inicio</a></li>
+              <li><a href="#solucion" className="hover:text-white transition-colors">La Solución</a></li>
+              <li><a href="#simulador" className="hover:text-white transition-colors">App Interactiva</a></li>
+              <li><a href="#descargas" className="hover:text-white transition-colors">Descargas Oficiales</a></li>
+              <li><a href="#contacto-demo" className="hover:text-white transition-colors">Pedir Demostración</a></li>
+            </ul>
+          </div>
+
+          {/* Downloads & Binaries */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-black uppercase tracking-wider text-white">Instalables</h4>
+            <ul className="space-y-2">
+              <li>
+                <a href="/downloads/feriando-release.apk" download className="hover:text-white transition-colors flex items-center gap-2">
+                  <i className="fa-brands fa-android text-emerald-400"></i>
+                  <span>Android APK (57 MB)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#descargas" className="hover:text-white transition-colors flex items-center gap-2">
+                  <i className="fa-brands fa-windows text-blue-400"></i>
+                  <span>Windows (Setup x64)</span>
+                </a>
+              </li>
+              <li>
+                <a href="#descargas" className="hover:text-white transition-colors flex items-center gap-2">
+                  <i className="fa-brands fa-apple text-slate-300"></i>
+                  <span>macOS (DMG)</span>
+                </a>
+              </li>
+              <li>
+                <a href="/downloads/LEEME-APK.txt" target="_blank" className="hover:text-white transition-colors text-[11px] text-slate-400">
+                  <i className="fa-solid fa-file-lines text-xs mr-1"></i> Guía técnica de instalación
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Admin & Security */}
+          <div className="space-y-3">
+            <h4 className="text-xs font-black uppercase tracking-wider text-white">Administración</h4>
+            <p className="text-[11px] text-slate-400 leading-relaxed">
+              Panel de gestión para solicitudes de demostración y métricas de distribución de releases.
+            </p>
+            <button 
+              onClick={onOpenAdmin}
+              className="inline-flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-bold text-xs transition-colors cursor-pointer"
+            >
+              <i className="fa-solid fa-lock text-brand-400"></i>
+              <span>Panel de Control</span>
+            </button>
+          </div>
+
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+          <p>© {currentYear} Proyecto Feriando. Todos los derechos reservados.</p>
+          <div className="flex items-center gap-4">
+            <span className="flex items-center gap-1.5 text-emerald-400">
+              <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              Servidor Activo
+            </span>
+            <span>Desarrollado en Flutter & React</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  );
+}

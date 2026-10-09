@@ -1,0 +1,19 @@
+CARPETA DE COMPILACIONES Y DESCARGAS DE FERIANDO
+=================================================
+
+Aquí se almacena el archivo instalable APK oficial para Android.
+
+Archivos disponibles actualmente:
+- feriando-release.apk (Compilación oficial nativa en Flutter)
+- app-release.apk (Copia directa de la salida de compilación)
+
+Ruta pública web servida directamente:
+- https://[tu-dominio]/downloads/feriando-release.apk
+- http://localhost:5173/downloads/feriando-release.apk
+
+Cuando generes una nueva versión de Flutter:
+Ejecuta:
+  flutter build apk --release
+Y copia el archivo generado en:
+  build\app\outputs\flutter-apk\app-release.apk
+directamente dentro de esta carpeta con el nombre "feriando-release.apk".
