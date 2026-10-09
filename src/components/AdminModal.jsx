@@ -28,12 +28,12 @@ export default function AdminModal({ isOpen, onClose, onLoginSuccess, onShowToas
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/70 backdrop-blur-sm animate-fade-in">
-      <div 
+      <div
         className="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-slate-200 relative overflow-hidden"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Top Close Button */}
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition-colors cursor-pointer"
           aria-label="Cerrar modal"
@@ -73,8 +73,8 @@ export default function AdminModal({ isOpen, onClose, onLoginSuccess, onShowToas
             <label className="block text-xs font-bold text-slate-700 mb-1">Usuario</label>
             <div className="relative">
               <i className="fa-regular fa-user absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-              <input 
-                type="text" 
+              <input
+                type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 required
@@ -87,8 +87,8 @@ export default function AdminModal({ isOpen, onClose, onLoginSuccess, onShowToas
             <label className="block text-xs font-bold text-slate-700 mb-1">Contraseña</label>
             <div className="relative">
               <i className="fa-solid fa-lock absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-xs"></i>
-              <input 
-                type="password" 
+              <input
+                type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
@@ -97,7 +97,7 @@ export default function AdminModal({ isOpen, onClose, onLoginSuccess, onShowToas
             </div>
           </div>
 
-          <button 
+          <button
             type="submit"
             disabled={loading}
             className="w-full py-3.5 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-700 hover:to-emerald-700 text-white font-black text-sm shadow-lg shadow-brand-600/20 transition-all flex items-center justify-center gap-2 cursor-pointer disabled:opacity-75"
