@@ -33,7 +33,7 @@ export default function Hero({ onShowToast }) {
                 <span>Descargar APK Oficial</span>
               </a>
               <a 
-                href="#simulador" 
+                href="#simulador-movil" 
                 className="w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-2xl bg-white hover:bg-slate-50 text-slate-800 font-extrabold text-sm sm:text-base border-2 border-slate-200 hover:border-brand-500 hover:text-brand-700 transition-all duration-300 flex items-center justify-center gap-2.5 sm:gap-3 shadow-sm hover:shadow-md"
               >
                 <i className="fa-solid fa-mobile-screen text-brand-600"></i>

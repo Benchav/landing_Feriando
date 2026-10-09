@@ -41,7 +41,7 @@ export default function Footer({ onOpenAdmin }) {
             <ul className="space-y-2">
               <li><a href="#inicio" className="hover:text-white transition-colors">Inicio</a></li>
               <li><a href="#solucion" className="hover:text-white transition-colors">La Solución</a></li>
-              <li><a href="#simulador" className="hover:text-white transition-colors">App Interactiva</a></li>
+              <li><a href="#simulador-movil" className="hover:text-white transition-colors">App Interactiva</a></li>
               <li><a href="#descargas" className="hover:text-white transition-colors">Descargar APK</a></li>
             </ul>
           </div>

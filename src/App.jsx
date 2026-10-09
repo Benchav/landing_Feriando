@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Solution from './components/Solution';
-import Simulator from './components/Simulator';
 import Downloads from './components/Downloads';
 import Footer from './components/Footer';
 import Toast from './components/Toast';
@@ -75,7 +74,6 @@ export default function App() {
       <main className="flex-1">
         <Hero onShowToast={showToast} />
         <Solution />
-        <Simulator onShowToast={showToast} />
         <Downloads releases={releases} onDownload={handleDownload} onShowToast={showToast} />
       </main>
 

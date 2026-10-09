@@ -32,7 +32,7 @@ export default function Navbar({ onOpenAdmin }) {
           <nav className="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-600">
             <a href="#inicio" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Inicio</a>
             <a href="#solucion" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">La Solución</a>
-            <a href="#simulador" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">App Interactiva</a>
+            <a href="#simulador-movil" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">App Interactiva</a>
             <a href="#descargas" className="hover:text-brand-600 transition-colors py-1 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-brand-600 hover:after:w-full after:transition-all">Descargar APK</a>
           </nav>
 
@@ -73,7 +73,7 @@ export default function Navbar({ onOpenAdmin }) {
         <div className="lg:hidden border-t border-slate-200/80 bg-white/95 backdrop-blur-xl px-5 pt-4 pb-6 space-y-3 transition-all duration-300 shadow-xl">
           <a href="#inicio" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Inicio</a>
           <a href="#solucion" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">La Solución</a>
-          <a href="#simulador" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">App Interactiva</a>
+          <a href="#simulador-movil" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">App Interactiva</a>
           <a href="#descargas" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Descargar APK Android</a>
           <div className="pt-2 space-y-2.5">
             <a 
