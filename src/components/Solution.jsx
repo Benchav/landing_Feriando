@@ -41,39 +41,42 @@ export default function Solution() {
   ];
 
   return (
-    <section id="solucion" className="py-16 sm:py-24 bg-white border-y border-slate-200/80 relative">
+    <section id="solucion" className="py-12 sm:py-20 lg:py-24 bg-white border-y border-slate-200/80 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Title Header */}
-        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-16 space-y-3">
-          <span className="text-xs font-extrabold uppercase tracking-wider text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200">
-            Componentes del Sistema
-          </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14 space-y-3">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider text-brand-700 bg-brand-50 border border-brand-200 shadow-sm">
+            <i className="fa-solid fa-cube text-brand-600 text-xs"></i>
+            <span>Componentes del Sistema</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-black text-slate-900 tracking-tight leading-tight">
             Diseñado para revolucionar los intercambios comunitarios
           </h2>
-          <p className="text-slate-600 text-sm sm:text-lg">
+
+          <p className="text-slate-600 text-xs sm:text-base max-w-xl mx-auto leading-relaxed">
             Feriando rescata la esencia del trueque ancestral integrándolo con la agilidad, transparencia y georreferenciación de una suite moderna en Flutter.
           </p>
         </div>
 
         {/* Feature Cards Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
           {features.map((feat, idx) => (
             <div 
               key={idx}
-              className={`p-6 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200/90 ${feat.borderHover} hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-300 group flex flex-col justify-between`}
+              className={`p-5 sm:p-7 rounded-2xl sm:rounded-3xl bg-slate-50 border border-slate-200/90 ${feat.borderHover} hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group flex flex-col justify-between`}
             >
               <div>
-                <div className={`w-14 h-14 rounded-2xl ${feat.color} flex items-center justify-center text-2xl mb-6 group-hover:scale-110 group-hover:text-white transition-all duration-300 shadow-sm`}>
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-2xl ${feat.color} flex items-center justify-center text-xl sm:text-2xl mb-4 sm:mb-6 group-hover:scale-110 group-hover:text-white transition-all duration-300 shadow-sm`}>
                   <i className={feat.icon}></i>
                 </div>
-                <h3 className="text-xl font-extrabold text-slate-900 mb-2">{feat.title}</h3>
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <h3 className="text-lg sm:text-xl font-extrabold text-slate-900 mb-1.5">{feat.title}</h3>
+                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                   {feat.desc}
                 </p>
               </div>
-              <div className={`mt-5 pt-4 border-t border-slate-200/60 flex items-center text-xs font-bold ${feat.textColor} gap-1.5`}>
+              <div className={`mt-4 sm:mt-5 pt-3.5 border-t border-slate-200/60 flex items-center text-xs font-bold ${feat.textColor} gap-1.5`}>
                 <span>{feat.tag}</span>
                 <i className="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
               </div>
