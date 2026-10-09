@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Footer({ onOpenAdmin }) {
+export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -21,7 +21,6 @@ export default function Footer({ onOpenAdmin }) {
             <p className="text-slate-400 leading-relaxed max-w-sm">
               Plataforma tecnológica comunitaria diseñada para conectar productores, artesanos y vecinos mediante trueques transparentes y catálogos geolocalizados en una app nativa en Flutter.
             </p>
-
           </div>
 
           {/* Quick Links */}
@@ -58,15 +57,6 @@ export default function Footer({ onOpenAdmin }) {
                   <i className="fa-solid fa-file-lines text-xs"></i>
                   <span>Guía de instalación Android</span>
                 </a>
-              </li>
-              <li className="pt-2">
-                <button 
-                  onClick={onOpenAdmin}
-                  className="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-slate-300 border border-slate-800 font-bold text-xs transition-colors cursor-pointer"
-                >
-                  <i className="fa-solid fa-lock text-brand-400"></i>
-                  <span>Panel de Control</span>
-                </button>
               </li>
             </ul>
           </div>

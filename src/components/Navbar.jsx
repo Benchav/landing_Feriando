@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Navbar({ onOpenAdmin }) {
+export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
@@ -38,18 +38,9 @@ export default function Navbar({ onOpenAdmin }) {
 
           {/* Right Action Buttons */}
           <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-            <button 
-              onClick={onOpenAdmin} 
-              className="hidden md:inline-flex px-3.5 py-2 text-xs font-bold rounded-xl text-slate-700 bg-white hover:bg-slate-100 border border-slate-200 shadow-sm hover:shadow transition-all items-center gap-2 group cursor-pointer"
-            >
-              <span className="w-2 h-2 rounded-full bg-brand-500 group-hover:scale-125 transition-transform"></span>
-              <i className="fa-solid fa-lock text-brand-600 text-xs"></i>
-              <span>Acceso Admin</span>
-            </button>
-
             <a 
               href="#descargas" 
-              className="hidden sm:inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-700 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-brand-600/25 hover:shadow-xl hover:shadow-brand-600/35 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
+              className="inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-gradient-to-r from-brand-600 to-emerald-600 hover:from-brand-700 hover:to-emerald-700 text-white font-bold text-xs sm:text-sm shadow-md shadow-brand-600/25 hover:shadow-xl hover:shadow-brand-600/35 transition-all duration-300 hover:-translate-y-0.5 active:translate-y-0"
             >
               <i className="fa-brands fa-android text-base"></i>
               <span>Descargar APK</span>
@@ -75,7 +66,7 @@ export default function Navbar({ onOpenAdmin }) {
           <a href="#solucion" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">La Solución</a>
           <a href="#simulador-movil" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">App Interactiva</a>
           <a href="#descargas" onClick={closeMobileMenu} className="block py-2 text-slate-700 font-semibold hover:text-brand-600">Descargar APK Android</a>
-          <div className="pt-2 space-y-2.5">
+          <div className="pt-2">
             <a 
               href="#descargas" 
               onClick={closeMobileMenu} 
@@ -84,13 +75,6 @@ export default function Navbar({ onOpenAdmin }) {
               <i className="fa-brands fa-android mr-2"></i>
               Descargar Feriando APK
             </a>
-            <button 
-              onClick={() => { closeMobileMenu(); onOpenAdmin(); }} 
-              className="w-full py-2.5 text-center flex items-center justify-center gap-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 font-bold text-xs transition-colors cursor-pointer"
-            >
-              <i className="fa-solid fa-lock text-brand-600"></i>
-              <span>Acceso Panel Administrativo</span>
-            </button>
           </div>
         </div>
       )}
